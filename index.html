@@ -43,19 +43,7 @@
     font-family:'Manrope',sans-serif;
     line-height:1.6;
     -webkit-font-smoothing:antialiased;
-    position:relative;
-    overflow-x:hidden;
   }
-  body::before, body::after{
-    content:'';
-    position:fixed;
-    width:360px; height:360px; border-radius:50%;
-    filter:blur(80px); opacity:0.16; pointer-events:none; z-index:-1;
-    animation:float 10s ease-in-out infinite;
-  }
-  body::before{background:var(--accent); top:-90px; right:-70px;}
-  body::after{background:var(--accent2); bottom:-100px; left:-70px; animation-delay:-3s;}
-  @keyframes float{0%,100%{transform:translateY(0) scale(1);} 50%{transform:translateY(20px) scale(1.04);}}
   .mono{font-family:'JetBrains Mono',monospace;}
   a{color:inherit;}
   img{max-width:100%; display:block;}
@@ -308,18 +296,6 @@
   .contact p{color:#B7BEC8; max-width:480px; margin:0 auto 28px auto;}
   .contact-actions{display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-bottom:36px;}
   .contact .btn-primary{background:var(--accent);}
-  .mini-cta{
-    display:inline-flex; align-items:center; gap:8px; padding:10px 14px;
-    border-radius:999px; background:var(--accent-soft); color:var(--accent-dark);
-    font-family:'JetBrains Mono',monospace; font-size:12px; font-weight:700;
-    margin-bottom:18px;
-  }
-  .quote-card{
-    background:var(--surface); border:1px solid var(--line); border-radius:16px;
-    padding:24px; box-shadow:0 10px 30px rgba(18,22,29,0.04);
-  }
-  .quote-text{font-size:16px; color:var(--ink-soft); margin:0 0 12px 0; font-style:italic;}
-  .quote-author{font-weight:700; color:var(--ink);}
   .contact .btn-outline{background:transparent; border-color:#333B46; color:#fff;}
   .contact .btn-outline:hover{border-color:var(--mono-green); color:var(--mono-green);}
   .footer-meta{
@@ -405,26 +381,6 @@
 
         <div class="term-result">✔ Kesimpulan: siap berkontribusi untuk tim Anda.<span class="cursor"></span></div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="wrap reveal">
-  <div class="focus-grid">
-    <div class="focus-card">
-      <div class="focus-number">01</div>
-      <div class="focus-title">Berfokus pada pengalaman nyata</div>
-      <div class="focus-text">Membangun antarmuka yang tidak hanya indah, tetapi juga nyaman dipakai dan mudah dipahami.</div>
-    </div>
-    <div class="focus-card">
-      <div class="focus-number">02</div>
-      <div class="focus-title">Mengkombinasikan web & data</div>
-      <div class="focus-text">Menjembatani UI/UX, pengembangan web, dan analisis data dalam satu solusi yang terintegrasi.</div>
-    </div>
-    <div class="focus-card">
-      <div class="focus-number">03</div>
-      <div class="focus-title">Siap berkembang cepat</div>
-      <div class="focus-text">Cepat belajar, terbuka terhadap teknologi baru, dan senang bekerja dalam tim yang kolaboratif.</div>
     </div>
   </div>
 </section>
@@ -613,15 +569,6 @@
         <div class="lang-track"><div class="lang-fill" data-pct="65"></div></div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- TESTIMONIAL -->
-<section class="wrap reveal">
-  <div class="quote-card">
-    <div class="mini-cta">✨ Siap berkontribusi untuk tim digital</div>
-    <p class="quote-text">“Saya percaya portofolio yang baik bukan hanya soal tampilan, tetapi juga tentang kemampuan memecahkan masalah, kerja sama, dan menyampaikan solusi secara jelas.”</p>
-    <div class="quote-author">— Abbashalom Radja</div>
   </div>
 </section>
 
